@@ -1,0 +1,13 @@
+#!/bin/bash
+
+now=$(date +"%m_%d_%Y_%H%M%S")
+
+
+
+#a: auto compress: Uses your given file type to figure out what to do.
+
+#c: compress: Tells it to compress instead of decompressing
+
+#f: set a file name: allows you to specify your file and file path. You can also give relative path names as well.
+
+tar -a -cf backup_$now.tar.bz2 *.*
